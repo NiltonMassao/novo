@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block menu_home %}active{% endblock %}
+{% block content %}
+
+		<!-- Services -->
+        <div class="section">
+	        <div class="container">
+	        	<div class="row">
+	        		<div class="col-md-6 col-sm-6">
+	        			<div class="service-wrapper">
+							<a href="/produtos/">
+							<i class="fas fa-tv fa-5x"></i>
+		        			<h2 class="name">Produtos</h2></a>
+		        			<p>Entre aqui e encontre celulares, móveis, eletrodoméstivos, computadores e outros objetos novos ou usados que seu vizinho quer desapegar.</p>
+		        		</div>
+	        		</div>
+	        		<div class="col-md-6 col-sm-6">
+	        			<div class="service-wrapper">
+							<a href="/servicos/">
+							<i class="fas fa-tools fa-5x"></i>
+		        			<h2 class="name">Prestadores de Serviço</h2></a>
+		        			<p>Precisando de ajuda? Encontre aqui um vizinho perito em obras, serviços domésticos, manutenção de eletrodomésticos entre outros profissionais.</p>
+		        		</div>
+	        		</div>					
+	        	</div>
+	        </div>
+	    </div>
+	    <!-- End Services -->
+
+{% endblock %}
