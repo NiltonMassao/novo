@@ -36,19 +36,18 @@ def usuarios_inativos():
 
     for item in usersx:
         list.append(item.id)
-
+    list = []
     return list
 
 
 def produtos(request):
 
-    #categorias_todas = list(Categoria.objects.filter(tp_categoria='P'))
-    categorias = list(Categoria.objects.filter(tp_categoria='P'))
-
-    #categorias = []
-    #for itens in categorias_todas:
-        #if Produto.objects.filter(categoria=itens.id, st_produto='A').exclude(usuario__in=usuarios_inativos()).count() > 0:
-            #categorias.append(itens)
+    categorias_todas = list(Categoria.objects.filter(tp_categoria='P'))
+ 
+    categorias = []
+    for itens in categorias_todas:
+        if Produto.objects.filter(categoria=itens.id, st_produto='A').exclude(usuario__in=usuarios_inativos()).count() > 0:
+            categorias.append(itens)
 
     return render(request, 'anuncios/produtos.html', {'categorias': categorias})
 
