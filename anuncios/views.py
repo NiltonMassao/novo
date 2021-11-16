@@ -36,7 +36,7 @@ def usuarios_inativos():
 
     for item in usersx:
         list.append(item.id)
-    list = []
+
     return list
 
 
