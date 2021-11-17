@@ -181,8 +181,7 @@ import cloudinary.api
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
-
-
+#não deu certo
 
 
 
