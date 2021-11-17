@@ -8,6 +8,7 @@ from django.db.models.fields import CharField, DateTimeField, IntegerField
 from django.utils import timezone
 import os
 from uuid import uuid4
+import cloudinary
 from cloudinary.models import CloudinaryField
 
 # renomear o arquivo de imagem caso tenha nome igual no diretorio
