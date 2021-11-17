@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'anuncios',
     'users.apps.UsersConfig',
+    'cloudinary',
 
     # 3rd part
     'allauth',
@@ -172,6 +173,24 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # django-crispy-forms
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+
+
+
+import environ
+
+env = environ.Env()
+
+cloudinary.config( 
+  cloud_name = env ("CLOUD_NAME"),
+  api_key = env ("CLOUD_API_KEY", 
+  api_secret = env ("CLOUD_API_SECRET")
+)
+
+
