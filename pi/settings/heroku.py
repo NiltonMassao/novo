@@ -14,6 +14,9 @@ DATABASES = {
     "default": env.db(),
 }
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 #cloudinary.config( 
 #  cloud_name = env ("CLOUD_NAME"),
