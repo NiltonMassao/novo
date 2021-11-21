@@ -182,8 +182,6 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 #não deu certo
 
-import environ
-env = environ.Env()
-print(env ("CLOUD_NAME"))
+
 
 
