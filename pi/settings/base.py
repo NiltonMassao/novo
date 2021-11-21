@@ -179,8 +179,15 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 # django-crispy-forms
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
-
+cloudinary.config( 
+  cloud_name = os.environ.get('CLOUD_NAME'),
+  api_key = os.environ.get('CLOUD_API_KEY'), 
+  api_secret = os.environ.get('CLOUD_API_SECRET')
+)
 
 
 

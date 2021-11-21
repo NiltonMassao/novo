@@ -60,7 +60,7 @@ class Produto(models.Model):
         verbose_name='Data do Cadastro', auto_now_add=True)
     st_produto = models.CharField(
         max_length=1, verbose_name='Situação do Produto', choices=STATUS_CHOICES)
-    imagem =CloudinaryField('image')
+    imagem =CloudinaryField('image' )
   
 
     def __str__(self):
