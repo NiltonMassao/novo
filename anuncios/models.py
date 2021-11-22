@@ -146,7 +146,7 @@ class Servico(models.Model):
         verbose_name='Data do Cadastro', auto_now_add=True)
     st_servico = models.CharField(
         max_length=1, verbose_name='Situação do Serviço', choices=STATUS_CHOICES)
-    imagem =CloudinaryField('image')
+    imagem =CloudinaryField('image' )
 
     def __str__(self):
         return self.tx_titulo_servico

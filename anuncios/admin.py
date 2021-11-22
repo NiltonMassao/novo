@@ -9,11 +9,11 @@ Condominío as informações para o cadastro de formas de Contato. Por
 exemplo: WhatsApp, Telefone, E-Mail.
 '''
 #class ContatoInline(admin.TabularInline):
-   # model = Contato
-   # extra = 3
+    #model = Contato
+    ##extra = 3
 
 #class CondominioAdmin(admin.ModelAdmin):
-  #  inlines = [ContatoInline]
+    #inlines = [ContatoInline]
 
 class ProdutoAdmin(admin.ModelAdmin):
     model = Produto

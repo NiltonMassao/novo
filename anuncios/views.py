@@ -43,7 +43,7 @@ def usuarios_inativos():
 def produtos(request):
 
     categorias_todas = list(Categoria.objects.filter(tp_categoria='P'))
- 
+
     categorias = []
     for itens in categorias_todas:
         if Produto.objects.filter(categoria=itens.id, st_produto='A').exclude(usuario__in=usuarios_inativos()).count() > 0:

@@ -131,9 +131,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # User Model (nome do app e o nome da classe em models.py)
 AUTH_USER_MODEL = 'users.User'
@@ -175,7 +175,6 @@ ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
 
-
 # django-crispy-forms
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
@@ -188,6 +187,3 @@ cloudinary.config(
   api_key = os.environ.get('CLOUD_API_KEY'), 
   api_secret = os.environ.get('CLOUD_API_SECRET')
 )
-
-
-
