@@ -41,11 +41,8 @@
                                     <a href="#void" onclick="enviarMensagem({{contato.tx_contato}},'*[Negocia aí, vizinho!]*\n\nOlá, Tudo bem?\n\nVi seu anúncio e fiquei interessado no serviço: *{{servico.tx_titulo_servico}}*.\n\n*Link do anúncio:*\n{{ request.scheme }}://{{ request.get_host }}{{ request.get_full_path }}\n\nVamos negociar?')">
                                         <i class="fab fa-whatsapp-square" style="font-size: 1.5em;"></i>
                                       {{contato.tx_contato}}</a>
-                                {% endifequal %}
-
-                                            <i class="fab fa-whatsapp-square" style="font-size: 1.5em;"></i>
-                                          {{contato.tx_contato}}</a>
                                     {% endifequal %}
+
                                 </li>
                                 <li>
                                     {% ifequal contato.tp_contato "Telegram" %}        
